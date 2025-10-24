@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+#header{
+    height: 100vh;
+      width:100%;
+      background-image: url(content/WhatsApp\ Image\ 2025-06-23\ at\ 12.41.08_cd589bbc.jpg);
+      background-size: cover;
+      background-position: center;
+}
+.navbar{
+   padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 100px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+
+}
+
+nav ul li a{
+    color: #e48e1c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+
+    position: relative;
+}
+nav ul li a:hover{
+    color: aqua;
+    transition: 1s;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-intro{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    font-size: 30px;
+}
+.mypic{
+    height: 67vh;
+    width: 50%;
+    
+}
+/*---------------------------------------about part----------------------------------*/
+#about{
+    display: flex;
+}
+.about-pic{
+    width: 30%;
+    padding-top: 30px;
+    background: black;
+}
+.pic{
+    display:flex;
+    margin: auto;
+    margin-top: 20%;
+    width:400px;
+    height:600px;
+    background-image: url(content/IMG_20240905_224027.jpg);
+    background-size: cover;
+    justify-content:center;
+    align-items: center;
+}
+.about-info{
+    width: 70%;
+    padding: 40px 30px;
+    font-size: 20px;
+    background-color: black;
+}
+.about-info p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.myabout{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.all-about{
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+}
+.all-about:hover{
+    color: aqua;
+    transition: 1s;
+}
+.all-about::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0837df;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+.all-about:hover::after{
+    width: 70%;
+}
+.about-containts ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.about-containts ul li span{
+    color: aqua;
+    font-size: px;
+}
+.about-containts{
+    display: none;
+}
+.about-containts.showcontaints{
+    display: block;
+}
+#HOBBIES ul{
+    padding-left: 25%;
+}
+#EdUCATION ul{
+    padding-left: 10%;
+}
+/*-----------------------projects------------*/
+#projects{
+    padding: 30px 70px;
+    background-color: black;
+}
+.project-list{
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(550px, 1fr));
+}
+.project-list div{
+    background: #48433c;
+    padding: 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: background 1s,transform 1s;
+}
+.project-list div:hover{
+    background-color:  rgb(49, 13, 192);
+    transform: translateY(-20px);
+}
+.project-list div i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: aqua;
+}
+.project-list div h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 13px;
+    display: inline-block;
+}
+/*-----------------------cotact------------*/
+#contact{
+    position: relative;
+    height: 100vh;
+    padding: 0px 70px;
+    padding-top: 50px;
+    background-color: black;}
+.contact-about{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me{
+    flex-basis: 65%;
+}
+.contact-me h1{
+    color: rgb(172, 167, 167);
+    font-size: 70px;
+    font-weight: 500;
+}
+.contact-me p{
+    margin-top: 20px;
+}
+.contact-me p i{
+    color: aqua;
+}
+.social-contact {
+    margin-top: 20px;
+}
+.social-contact a {
+    margin-right: 10px;
+}
+.social-contact a i{
+    font-size: 30px;
+    color: aqua;
+    transition: 1s;
+}
+.social-contact a i:hover{
+    transform: translateY(-15px);
+}
+.btn{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: aqua;
+    height: 60px;
+    width: 200px;
+}
+.dm-me{
+    flex-basis: 70%;
+}
+.dm-me form{
+    width: 90%;
+}
+form input,form textarea{
+    width: 100%;
+background: rgb(20, 19, 19);
+margin: 20px 0;
+margin-right: 30px;
+padding: 20px;
+border-radius: 10px;
+font-size: 20px;
+}
+.subtitle{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+   font-size: 20px;
+  align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 50px;
+   width: 100%;
+    color: #d15b00;
+    font-weight: 500;
+    background-color: black;
+    
+}
+#fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px)
+{
+    *{
+       padding: 0;
+       margin: 0;
+    }
+
+  #header{
+    background-image: url(content/dark-background-abstract-background-network-3d-background-6016x3384-8324.png);
+  }
+  .intro{
+    position: absolute;
+    bottom: 30px;
+    align-items: flex-end;
+    font-size: 20px;
+  }
+
+  .intro p{
+    color: #d15b00;
+    font-weight: 500;
+  }
+  #fas{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul #fas{
+        cursor: pointer;
+        padding-left: 20px;
+        font-size: 30px;
+  }
+   nav ul{
+    position: fixed;
+    background: rgb(0, 0, 0);
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 1s;
+  }
+  projects{
+    padding: 30px 20px;
+    align-items: center;
+  }
+  .project-list{
+   display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+    .project-list div{
+        width: 200px;
+    }
+  .contact-about{
+    display: block;
+  }
+  #about{
+    background-color: black;
+    display: block;
+    width: 100%;
+  }
+   .pic{
+    width: 360px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+   }
+   .about-info{
+    font-size: 12px;
+    width:min-content ;
+    margin: auto;
+    justify-content: center;
+   }
+   .about-info p{
+    font-size: 12px;
+   }
+   .subtitle{
+    display: block;
+    font-size: small;
+    position: relative;
+    bottom: 0;
+ }
+ #contact{
+    height: 120vh;
+ }
+ .contact-about{display:flex;
+ flex-direction: column;}
+ .contact-me{
+    height: 100vh;
+
+ }
+ .contact-me h1{
+    font-size: 40px;
+ }
+   #HOBBIES ul{
+    padding-left: 67%;
+   }
+   #EDUCATION ul{
+    padding-left: 20%;
+   }
+}    

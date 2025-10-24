@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="navbar">
+            <nav>
+                <img src="content/Akash-design-china-name-removebg-preview.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACTS</a></li>
+                    <i class="fa-solid fa-circle-xmark" id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-intro">
+                <div class="intro">
+                    <p>Hi I am <span style="font-size: 50px; color: rgb(7, 248, 216);">Akash Nandi</span></p>
+                    <p> a 4th year undergraduate in ECE </p>
+                    <p> web developer /programmer /circuit designer </p>
+                    <a href="content/resume.png"> <button class="btn"> Download Resume</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--about section-->
+    <div id="about">
+        <div class="about-pic"><div class="pic"></div></div>
+        <div class="about-info">
+            <h1 style="color: gray;">About me</h1>
+            <p>Hello! I'm Akash Nandi, an enthusiastic and dedicated student of Electronics and Communication
+                Engineering (ECE) with a deep interest in technology and digital innovation. Over the years, I have
+                developed a strong passion for web design, where I combine my technical background with creative
+                thinking to craft engaging, responsive, and user-friendly websites.
+                <br>
+                My journey into web design started out of curiosity and quickly turned into a skill I truly enjoy
+                refining. I am comfortable working with modern web technologies like HTML, CSS, JavaScript, and various
+                design tools to bring ideas to life on the web. I enjoy solving problems, learning new techniques, and
+                staying updated with the latest trends in both technology and design.
+                <br>
+                As an ECE student, I also appreciate the importance of structure, logic, and precision — qualities that
+                I bring into my design process. My goal is to build digital experiences that not only look great but
+                also function smoothly and deliver value to users.I am always open to new opportunities, collaborations,
+                and challenges that push me to grow further — both
+                as an engineer and a designer.
+            </p>
+            <div class="myabout">
+                <p class="all-about showabout" onclick="opentab('SKILLS')">SKILLS</p>
+                <p class="all-about" onclick="opentab('EDUCATION')">EDUCATION</p>
+                <p class="all-about" onclick="opentab('HOBBIES')">HOBBIES</p>
+            </div>
+            <div class="about-containts showcontaints" id="SKILLS">
+                <ul>
+                    <li><span>programming languages</span><br>c<br>c++<br>javascript<br>python</li>
+                    <li><span>framework</span><br>django</li>
+                    <li><span>library</span><br>react<br></li>
+                    <li><span>languages</span><br>English<br>Bengali<br>Hindi</li>
+                </ul>
+            </div>
+            <div class="about-containts" id="EDUCATION">
+                <ul>
+                    <li><span>secoundary(2018)---------67%</span><br>from bohar high school(h.s)</li>
+                    <li><span>higher secoundary(2020)-------86%</span><br>from bohar high school(h.s)</li>
+                    <li><span>graduation(running)----cgpa-7.00</span><br>from Hooghly Engineering & Technology College</li>
+                </ul>
+            </div>
+            <div class="about-containts" id="HOBBIES"  >
+                <ul>
+                    <li>Cricket</li>
+                    <li>Football</li>
+                    <li>Photography</li>
+                    <li>Chess</li>
+                    <li>Reading Books</li>
+                </ul>
+            </div>
+       </div>
+    </div>
+    <!--projects-->
+    <div id="projects">
+        <div class="projects-info">
+            <h1 style="color: rgb(172, 167, 167);"> My projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>design cool and attractive webpages using HTML,CSS,JS.I built projects like
+                        personal portfolio, a restaurant website, and an educational site. The portfolio showcases
+                        skills and projects, the restaurant site features menus and booking options, and the educational
+                        site provides course details and enrollment info. All are responsive and user-friendly. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clone"></i>
+                    <h2>clone apps</h2>
+                    <p>built similler apps interfaces like amazon,spotify,netflix.This is a clone app built using HTML,
+                        CSS, and JavaScript, replicating the design and core features of a popular platform. It
+                        showcases front-end skills with a focus on responsive layout and interactive elements using
+                        vanilla JavaScript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-comments"></i>
+                    <h2>Chat application</h2>
+                    <p> This project is a simple chat application built with HTML, CSS, and JavaScript. It allows users to
+                        send and receive messages in real-time, showcasing basic web development skills like layout,
+                        styling, and client-side scripting. The app features a user-friendly interface and can be
+                        extended with more advanced functionalities like user authentication or message history.</p>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>games</h2>
+                    <p> This project features two classic games — Tic Tac Toe and Stone Paper Scissors — created using
+                        HTML, CSS, and JavaScript. Both games run in the browser with simple designs and interactive
+                        gameplay, showcasing basic web development skills like layout, styling, and game logic using
+                        JavaScript.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------contacts----------->
+    <div id="contact">
+        <div class="contact-info">
+            <div class="contact-about">
+                <div class="contact-me">
+                    <h1>Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nandiakash182@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> - 8972966614</p>
+                    <div class="social-contact">
+                        <a href="https://www.facebook.com/utpai.nandi"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/akx_nd_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akash-nandi-009b4223a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Akash-Nandi"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="dm-me">
+                    <form >
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required >
+                    <textarea name="Message" rows="6" placeholder="Your Message" required ></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="subtitle">This website is Made with &hearts; &#169; copyright, Akash Nandi</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
